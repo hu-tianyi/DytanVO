@@ -12,6 +12,8 @@ Run ```preprocess/crop.py``` to center crop RGB and depth images respectively so
 *Optional*: Run ```prerpocess/debug_data.py``` to test TartanVO over the first ```500``` frames which have the corresponding groundtruth segmentation mask inside ```tartanvo/data/fr3_walking_xyz/cropped/mask```. This can be used to compare the performance of TartanVO with and without closed-loop pose refinement using rerendered images. 
 
 ## Usage
+Set up the frontend, TartanVO, by following [README](tartanvo/README.md).
+
 Two methodologies of segmentation are ```segmentation1.py``` and ```segmentation2.py``` inside ```backend/```. The main includes the implementation of the entire backend, i.e., removing dynamic pixels from images and reconstructing only the static points through point-based fusion. 
 
 ```slam.py``` in ```tartanvo/``` implements the closed-loop pose refinement using rerendered images after iteratively removing dynamic pixels in backend.
