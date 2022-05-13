@@ -1,5 +1,5 @@
 # Dynamic Dense RGB-D SLAM with Learning-Based Visual Odometry  
-[Paper](https://arxiv.org/abs/2205.05916)
+We propose a dense dynamic RGB-D SLAM pipeline based on a learning-based visual odometry, TartanVO. TartanVO, like other direct methods rather than feature-based, estimates camera pose through dense optical flow, which only applies to static scenes and disregards dynamic objects. Due to the color constancy assumption, optical flow is not able to differentiate between dynamic and static pixels. Therefore, to reconstruct a static map through such direct methods, our pipeline resolves dynamic/static segmentation by leveraging the optical flow output, and only fuse static points into the map. Moreover, we rerender the input frames such that the dynamic pixels are removed and iteratively pass them back into the visual odometry to refine the pose estimate. Please see our [paper](https://arxiv.org/abs/2205.05916) for more details.
 
 ## Datasets
 Download [TUM fr3_walking_xyz](https://vision.in.tum.de/data/datasets/rgbd-dataset/download#freiburg3_walking_xyz) and place ```depth/```, ```rgb/```, ```depth.txt```, ```rgb.txt```, and ```groundtruth.txt``` under ```tartanvo/data/fr3_walking_xyz```. 
