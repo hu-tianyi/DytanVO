@@ -1,4 +1,5 @@
-# Dynamic Dense RGB-D SLAM with Learning-Based Visual Odometry | [Paper](https://arxiv.org/abs/2205.05916)
+# Dynamic Dense RGB-D SLAM with Learning-Based Visual Odometry  
+[Paper](https://arxiv.org/abs/2205.05916)
 
 ## Datasets
 Download [TUM fr3_walking_xyz](https://vision.in.tum.de/data/datasets/rgbd-dataset/download#freiburg3_walking_xyz) and place ```depth/```, ```rgb/```, ```depth.txt```, ```rgb.txt```, and ```groundtruth.txt``` under ```tartanvo/data/fr3_walking_xyz```. 
